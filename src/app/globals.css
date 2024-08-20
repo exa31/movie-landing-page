@@ -3,31 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background-color: rgba(15, 15, 15, 0.986);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.shadow-bg {
+  box-shadow: inset 0rem 10rem 10rem rgba(0, 0, 0, 0.8),
+    inset 0rem -25rem 10rem rgba(0, 0, 0, 1);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.btn-red {
+  background-color: #e50000;
+}
+
+.text-red {
+  color: #e50000;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 20%;
+  /* margin-right: 20px; */
+}
+
+.shadow-red-card {
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    36deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 0, 0, 1) 72%,
+    rgba(0, 0, 0, 1) 74%,
+    rgba(255, 0, 0, 0.23573179271708689) 100%
+  );
+  background: -webkit-linear-gradient(
+    36deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 0, 0, 1) 72%,
+    rgba(0, 0, 0, 1) 74%,
+    rgba(255, 0, 0, 0.23573179271708689) 100%
+  );
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    36deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 0, 0, 1) 72%,
+    rgba(0, 0, 0, 1) 74%,
+    rgba(255, 0, 0, 0.23573179271708689) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#ff0000",GradientType=1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.bg-accordion {
+  box-shadow: rgba(255, 0, 0, 0.603) 0px -20px 36px -28px inset;
 }
